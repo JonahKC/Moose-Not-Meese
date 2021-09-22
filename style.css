@@ -51,20 +51,11 @@ footer {
 	display: block;
 }
 .bigtitle{
-	font-size: 400%;
-	text-align: center;
-	position: absolute;
-	top: 60px;
-	left: 10%;
-	right: 10%;
+	font-size: 70px;
 }
 .subtitle{
-	text-align: center;
-	position: absolute;
-	top: 400px;
-	left: 10%;
-	right: 10%;
-}
+	font-size: 30px;
+}	
 .righttext {
 	text-align: right;
 	margin-left: 50%;
@@ -125,7 +116,7 @@ footer {
 /* FANCY SCROLL */
 .image-holder {
 	width: 100%;
-	height: 110vh !important;
+	min-height: 110vh !important;
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -140,26 +131,9 @@ footer {
 	}
 }*/
 @media screen and (max-width: 600px) {
-  .image-holder {
-		height: 100vh;
-		padding-top: 100px;
-
-	}
 	.bigtitle{
-		font-size: 50px;
-		text-align: center;
-		position: absolute;
-		top: 50px;
-		left: 2%;
-		right: 2%;
+	font-size: 50px;
 	}
-	.subtitle{
-		text-align: center;
-		position: absolute;
-		top: 200px;
-		left: 2%;
-		right: 2%;
-	}	
 }
 /* FADE IN TEXT */
 .fade-in-text {
