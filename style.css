@@ -133,13 +133,12 @@ footer {
 	flex-direction: column;
 
 }
-@media screen and (max-height: 600px) {
-
+/*@media only screen and (max-height: 600px) {
   .image-holder {
-		height: 700px !important;
+		height: 700px;
 		padding-top: 100px;
 	}
-}
+}*/
 @media screen and (max-width: 600px) {
   .image-holder {
 		height: 100vh;
