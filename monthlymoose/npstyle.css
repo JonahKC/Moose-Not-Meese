@@ -113,12 +113,57 @@ footer {
 .footertext {
 	color: #fafafa;
 }
+#home {
+	background-image: url(./title-moose.jpg);
+}
+#signup {
+	background-image: url(./title-moose-2.jpg);
+}
+
+/* NEWSPAPER */
+
+.npline {
+  background-color: black;
+  border-color: transparent;
+  border-radius: 1px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  width: 90%;
+  height: .3px;
+}
+.nptext {
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+.nplink {
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+	
+}
+.npbox {
+	border: none; /*solid black 1px;*/
+}
+.nppadding {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+#photo  {
+	float: left;   
+	object-fit: cover;
+	position: center center;
+	margin-left: 30px;
+	margin-right: 15px; 
+	border: solid 1px black;
+}
 /* FANCY SCROLL */
 .image-holder {
 	width: 100%;
-	min-height: 110vh !important;
-	background-position: center center;
-	background-attachment: fixed;
+	min-height: 70vh !important;
+	background-position: 50% 70%;
+	background-attachment: unset !important;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -176,10 +221,11 @@ footer {
 
 .column {
   float: left;
-  width: 25%;
-  text-align: center;
+  width: 31%;
   padding-top: 50px;
   padding-bottom: 50px;
+	padding-left: 1%;
+	padding-right: 1%;
 ;
 }
 /* Clear floats after the columns */
@@ -191,9 +237,40 @@ footer {
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 50%;
+    width: 100%;
     padding: 0px 0;
     display: inherit;
 		height: auto;
   }
+}
+
+/* FORMS */
+input[type=text] {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+input[type=email] {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: black;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+
+}
+.formcenter{
+	margin-left: 40%;
+	margin-right: 40%;
+}
+@media screen and (max-width: 600px) {
+  .formcenter{
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+}
 }
