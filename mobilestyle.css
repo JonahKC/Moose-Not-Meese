@@ -116,6 +116,7 @@ footer {
 }
 /* FANCY SCROLL */
 .image-holder {
+  background-attachment: initial;
 	width: 100%; 
 	min-height: 110vh !important;
 	padding-top: 100px;
@@ -124,7 +125,6 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
-
 
 @media screen and (max-width: 600px) {
 
