@@ -102,7 +102,7 @@ footer {
   width: 100%;
   height: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .phonespace {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -123,7 +123,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.bigtitle{
 	font-size: 50px;
 	}
@@ -188,7 +188,7 @@ footer {
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 50%;
     padding: 0px 0;
