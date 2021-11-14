@@ -25,12 +25,9 @@
     <link rel="stylesheet" type="text/css" href="mobilestyle.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="scrollfade/css/main.css">
 		<script type="text/javascript">
-		<script type="text/javascript">
-		<!--
-		if (screen.width >= 800) {
-		document.location = "/";
-		}
-		//-->
+      if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screen.width <= 800)){
+        location.replace('/');
+      }
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-TY54H8LS9H"></script>
