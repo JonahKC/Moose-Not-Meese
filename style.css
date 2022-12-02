@@ -1,198 +1,94 @@
+/* Setup */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-/* OVERALL CSS */
-
 html {
-	font-family: 'Nunito', sans-serif;
-  margin-left: 0px;
-  margin-right: 1px;
-  margin-top: 0px;
-	margin-bottom: 0px;
-  background-color: #000;
+  font-family: 'Nunito', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
 }
 body {
-	margin-left: 0px;
-  margin-right: 1px;
-  margin-top: 0px;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn linear 1.5s;
 }
-p, h1, h2, h3, h4 {
-	color: #fafafa;
-}
-a {
-  text-decoration: underline;
-  color: #fafafa;
-}
-img {
-  user-drag: none; 
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-footer {
-  color: #fafafa !important;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: .9rem;
-}
-
-/* CUSTOM CSS */
-
-.center {
-  text-align: center;
-}
-.margin-centered{
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-.bigtitle{
-	font-size: 70px;
-}
-.subtitle{
-	font-size: 30px;
-}	
-.righttext {
-	text-align: right;
-	margin-left: 57%;
-	margin-right: 10px;
-}
-.width-minimum {
-	display: inline-block;
-}
-.titlelink {
-  text-decoration: none;
-  color: #fafafa;
-}
-.wideline {
-  background-color: #118d91;
-  border-color: transparent;
-  border-radius: 4px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 2px;
-}
-.narrowline {
-  background-color: #118d91;
-  border-color: transparent;
-  border-radius: 4px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 50%;
-  height: 2px;
-}
-.space {
-  background-color: transparent;
-  border-color: transparent;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 1rem;
-}
-.phonespace {
-  background-color: transparent;
-  border-color: transparent;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 1rem;
-}
-@media screen and (max-width: 800px) {
-  .phonespace {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    width: 1%;
-    height: 0rem;
-  }
-}
-.footertext {
-	color: #fafafa;
-}
-/* FANCY SCROLL */
-.image-holder {
-	width: 100%;
-	min-height: 110vh !important;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-}
-@media screen and (max-width: 800px) {
-	.bigtitle{
-	font-size: 50px;
-	}
-}
-/* FADE IN TEXT */
-.fade-in-text {
-  display: inline-block;
-  animation: fadeIn linear 2s;
-  -webkit-animation: fadeIn linear 2s;
-  -moz-animation: fadeIn linear 2s;
-  -o-animation: fadeIn linear 2s;
-  -ms-animation: fadeIn linear 2s;
-}
-.fade-in-2 {
-  display: inline-block;
-  animation: fadeIn linear 4s;
-  -webkit-animation: fadeIn linear 4s;
-  -moz-animation: fadeIn linear 4s;
-  -o-animation: fadeIn linear 4s;
-  -ms-animation: fadeIn linear 4s;
-}
-
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+p {
+  font-size: 20px;
+  line-height: 2;
+}
+a {
+  text-decoration: underline;
+  color: #fff;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+/* Placement */
+.flex {
+  display: flex;
 }
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+.up {
+  flex-direction: column;
 }
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+.wrap {
+  flex-wrap: wrap;
 }
-
-/* COLUMNS */
-
-.column {
-  float: left;
-  width: 25%;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-;
+.inner {
+  padding:10px;
 }
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.center {
+  justify-content:center;
+  align-items:center;
 }
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+.textcenter {
+  text-align:center;
+}
+/* Custom Stuff */
+.fancylink {
+  transition: .3s;
+  margin: 0 20px 0 20px;
+}
+.fancylink a {
+  text-decoration: none;
+}
+.fancylink:hover {
+  transform: translate(-5px, -5px);
+}
+.backgroundimage {
+  width: 100%;
+	min-height: 110vh;
+	background-size: cover;
+  background-attachment: fixed;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+.footer div a {
+  padding:2px;
+}
+.tile {
+  margin: 20px;
+  width: 40vw;
+}
+.aboutparagraph {
+  margin: 0 20px 0 20px;
+}
+.aboutparagraph a {
+  color: #000;
+}
+/* Mobile */
 @media screen and (max-width: 800px) {
-  .column {
-    width: 50%;
-    padding: 0px 0;
-    display: inherit;
-		height: auto;
+  .backgroundimage div {
+    padding: 20px;
+  }
+  .backgroundimage {
+    background-attachment: unset;
+    min-height: 93vh;
+  }
+  .tile {
+    width: 100%;
   }
 }
