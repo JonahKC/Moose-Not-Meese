@@ -81,8 +81,8 @@ a {
 }
 /* Mobile */
 @media screen and (max-width: 800px) {
-  .backgroundimage div {
-    padding: 20px;
+  .backgroundimage div,h1,h2 {
+    padding: 10px;
   }
   .backgroundimage {
     background-attachment: unset;
@@ -90,5 +90,6 @@ a {
   }
   .tile {
     width: 100%;
+    margin: 0px;
   }
 }
