@@ -71,14 +71,18 @@ a {
 }
 .tile {
   margin: 15px;
-  padding:5px;
+  padding:5px 10px;
   width: 40vw;
-  background-color: rgba(255, 255, 255,1);
+  background: white;
   color:black;
   box-shadow: -20px 20px 0px -10px rgba(0,0,0,1);
 }
+.tile p {
+  text-align: left;
+}
 .aboutparagraph {
   margin: 0 20px 0 20px;
+  text-align: left;
 }
 .aboutparagraph a {
   color: #000;
