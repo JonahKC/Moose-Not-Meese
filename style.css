@@ -60,6 +60,7 @@ mark[black] {
 .fancylink {
   transition: .3s;
   margin: 10px 20px;
+  text-decoration: none;
 }
 .fancylink a {
   text-decoration: none;
@@ -87,7 +88,7 @@ mark[black] {
   width: 40vw;
   background: white;
   color:black;
-  box-shadow: -20px 20px 0px -10px rgba(0,0,0,1);
+  box-shadow: -20px 20px 0px -10px rgba(255,0,0,1);
 }
 .tile p {
   text-align: left;
