@@ -116,6 +116,13 @@ mark[black] {
 .footer a:hover {
   text-decoration: underline;
 }
+.footer img {
+  margin-bottom: 5px;
+  transition: .2s;
+}
+.footer img:hover {
+  transform: translate(-3px, -3px);
+}
 /* Mobile */
 @media screen and (max-width: 800px) {
   .backgroundimage div,h1,h2 {
